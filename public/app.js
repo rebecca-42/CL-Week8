@@ -1,17 +1,16 @@
 let socket = io();
 
-socket.on('connect', function() {
+socket.on('connect', () => {
     console.log("Connected");
-  });
+  })
 
 function setup() {
     createCanvas(1000, 1000);
     background(255);
 
-    socket.on('data', function(obj) {
-      console.log(obj);
+    socket.on('mouseData', (data) => {
       drawPos(obj);
-    });
+    })
 }
 
 function mouseMoved() {
