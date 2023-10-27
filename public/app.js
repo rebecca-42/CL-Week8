@@ -18,7 +18,7 @@ function mouseMoved() {
       x: mouseX,
       y: mouseY
     };
-    socket.emit('data', mousePos);
+    socket.emit('mData', mousePos);
   }
 
   function drawPos(pos) {
