@@ -24,5 +24,5 @@ function mouseMoved() {
 
   function drawPos(pos) {
     fill(random(255), random(255), random(255));
-    ellipse(mouseX, mouseY, 10, 10,);
+    ellipse(pos.x, pos.y, 10, 10,);
   }
